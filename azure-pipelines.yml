@@ -14,10 +14,10 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core 3.1.101 sdk'
+  displayName: 'Use .NET Core 3.1.x sdk'
   inputs:
     packageType: sdk
-    version: 3.1.101
+    version: 3.1.x
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
